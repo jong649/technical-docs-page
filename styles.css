@@ -1,3 +1,7 @@
+body {
+  background: lightgray;
+}
+
 header {
   font-size: 2rem;
   font-weight: bold;
@@ -13,12 +17,35 @@ header {
   display: flex;
 }
 
+.nav-li {
+  align-items: center;
+  border-top: 1px black dashed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 25px;
+}
+.nav-li:last-child {
+  border-bottom: 1px black dashed;
+}
+
 .nav-link {
+  color: darkblue;
   font-size: 1.25rem;
   text-decoration: none;
 }
+.nav-link:hover {
+  color: black;
+}
+
+#nav-list {
+  padding-inline-start: 0;
+  text-align: center;
+}
 
 #nav-title {
+  margin-bottom: 10%;
   padding: 10px;
   text-align: center;
 }
@@ -31,7 +58,8 @@ header {
 }
 
 #navbar {
-  border: 2px darkblue solid;
+  background: oldlace;
+  border: 1px darkblue solid;
   height: 100%;
   position: fixed;
   outline: 1px solid;
